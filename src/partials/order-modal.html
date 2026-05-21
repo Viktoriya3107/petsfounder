@@ -1,0 +1,59 @@
+<div class="order-backdrop">
+  <div class="order-modal">
+    <button class="order-modal-btn" type="button">
+      <svg class="is-open" width="14" height="14">
+        <use href="./img/sprite.svg#close1"></use>
+      </svg>
+    </button>
+    <p class="order-modal-text">Залишіть заявку на знайомство</p>
+
+    <form class="order-modal-form">
+      <div class="order-modal-form-field">
+        <label class="order-modal-form-label" for="user-name">Ім’я*</label>
+
+        <div class="order-modal-input-wrapper">
+          <input
+            class="order-modal-form-input"
+            type="text"
+            id="user-name"
+            name="name"
+            placeholder="Андрій"
+          />
+          <span class="error-message"></span>
+        </div>
+      </div>
+
+      <div class="order-modal-form-field">
+        <label class="order-modal-form-label" for="user_phone">Телефон*</label>
+
+        <div class="order-modal-input-wrapper">
+          <input
+            class="order-modal-form-input"
+            type="tel"
+            id="user_phone"
+            name="phone"
+            placeholder="380955559922"
+          />
+          <span class="error-message"></span>
+        </div>
+      </div>
+
+      <div class="order-modal-form-comment">
+        <label class="order-modal-form-label" for="user-comment"
+          >Коментар</label
+        >
+
+        <textarea
+          class="order-modal-form-textarea"
+          name="comment"
+          id="user-comment"
+          placeholder="Напишіть ваш коментар"
+        ></textarea>
+      </div>
+      <button class="send-button" type="submit">Надіслати</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="./js/order-modal.js"></script>
